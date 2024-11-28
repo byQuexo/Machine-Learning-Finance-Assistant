@@ -169,7 +169,7 @@ class UserInterface:
             future_dates = pd.date_range(
                 start=st.session_state.data.index[-1],
                 periods=forecast_period + 1,
-                freq='M'
+                freq='ME'
             )[1:]
 
             self._display_forecasts(future_dates)
