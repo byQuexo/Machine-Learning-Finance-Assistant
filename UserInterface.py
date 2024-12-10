@@ -55,7 +55,7 @@ class UserInterface:
     def _handle_data_input(self):
         """Process user input for financial data."""
         st.subheader("Enter Your Financial Data")
-        num_months = st.slider("Number of months of historical data:", 3, 24, 12)
+        num_months = st.slider("Number of months of historical data:", 4, 24, 12)
 
         data_dict = {
             'Monthly Income (£)': [],
